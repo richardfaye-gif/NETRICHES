@@ -1,6 +1,5 @@
 <?php
 /*
-
 */
 session_start();
 include('../data/bdd.php');
@@ -143,7 +142,7 @@ include('../data/bandeau.php');
 <div id="conteneur_membre">
 	<p id="parametre_compte_texte">Êtes-vous vraiment sûr(e) de vouloir clôturer votre compte ?</p>
 	<div id="conteneur_cloturation">
-		<p id="infos_cloturation">L'action de supprimer un compte est irréversible. Lors de la suppression vous perdez tous vos commentaires, statuts, abonnés et amis...<br /><br /><br /><br />Enfin, une notification sera envoyée à l'ensemble de vos abonnés et amis.<br /><br />Aurevoir <?php echo htmlspecialchars($recherche['pseudo']); ?>.</p>
+		<p id="infos_cloturation">L'action de clôturer un compte est irréversible. Lors de la clôturation vous perdez tous vos commentaires, statuts, abonnés et amis...<br /><br />Dans le cas où cette clôturation est dûe à un manque de maturité du projet Witzing, vous pouvez bien sûr me faire part de vos commentaires en envoyant un message à cette adresse : drevero@drevero.zz.mu.<br /><br />Enfin, une notification sera envoyée à l'ensemble de vos abonnés et amis.<br /><br />Aurevoir <?php echo htmlspecialchars($recherche['pseudo']); ?>.</p>
 		<a href="cloturer_compte.php?oui" title="Cloturer le compte"><input type="button" value="Oui je suis sûr(e)" id="cloturer_compte_confirm"/></a>
 	</div>
 </div>

@@ -87,6 +87,7 @@ if(!(isset($_GET['reussie'])))
 		<input type="file" id="fichier_avat" name="fichier_avat" onchange="visual_avatar();" accept="image/*"/>
 		<input type="hidden" id="avatar_change" name="avatar_change" value="0"/>
 		<input type="hidden" name="no_robot" value="true"/>
+		<p id="texte_intro">
 		<img src="" onclick="changer_avatar();" alt="" id="avatar_apercu" class="avatar_inscr"/>
 		<input type="submit" value="Créer le compte" id="creer_compte_confirm"/>
 		<a href="dernier_pas.php?annuler" title="Annuler la création de votre compte"><input type="button" value="Annuler" id="annuler_compte_confirm"/></a>

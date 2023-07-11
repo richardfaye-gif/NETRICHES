@@ -1,6 +1,5 @@
 <?php
 /*
-
 */
 session_start();
 include('data/bdd.php');
@@ -130,12 +129,12 @@ if(isset($_GET['erreur2']))
 		</form>
 	</div>
 	<div id="conteneur_avantages">
-		<p id="titre_witzing_pres">Bienvenue sur <span id="hashtag_witz">#NETRICHE</span></p>
-		<p id="pres_witzing">-Un réseau social libre, performant et gratuit !<br /><br />-Un réseau social différent !<br /><br />Si vous n'êtes pas inscrit, n'hésitez pas c'est facile (et c'est juste à droite)<br /><a href="p/a_propos.php" title="En savoir +"></a></p>
+		<p id="titre_witzing_pres">Bienvenue sur <span id="hashtag_witz">#NETRICHES</span></p>
+		<p id="pres_witzing">-Un réseau social libre, performant et gratuit !<br /><br />-Un réseau social différent !<br /><br />Si vous n'êtes pas inscrit, n'hésitez pas c'est facile (et c'est juste à droite)<br />
 	</div>
 	<img src="data/style/plis.png" alt="plis" id="plis_index"/>
 	<div id="conteneur">
-		<p>Devenir Membre</p>
+		<p>Devenir un NETRICHZEUR !!!!!!</p>
 		<form name="inscription" id="inscr_form" onsubmit="verif_inscr();return false;" method="post">
 			<input type="text" onfocus="afficher_info_bulle('info_inscr_inter', true);" onblur="afficher_info_bulle('info_inscr_inter', false);" placeholder="Pseudonyme" name="pseudo_inscr" id="pseudo_inscr" class="saisie" maxlength="20"/>
 			<p id="info_inscr_inter"><img src="data/style/fleche_droite.png" alt="fleche_droite" id="fleche_inter"/>Interdiction d'utiliser les caractères suivants : &lt;, espace ...</p>

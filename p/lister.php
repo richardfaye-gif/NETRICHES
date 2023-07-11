@@ -9,7 +9,7 @@ if(!in_array($_GET['req'], $type) && !isset($_GET['id_liste']))
 {
 	header('Location: index.php?id=' . $_SESSION['id_membre']);
 }
-include('../licence_include.php');
+
 ?>
 <!doctype html>
 <html>

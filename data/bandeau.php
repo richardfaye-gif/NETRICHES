@@ -4,12 +4,6 @@ $urlbase=$_SERVER['REQUEST_URI'];
 <div id="bandeau">
 <div class="context_glisse <?php if(preg_match('#/p/(index\.php\?id=' . $_SESSION['id_membre'] . '|lister\.php\?req=(.+)&id_liste=' . $_SESSION['id_membre'] . ')$#', $urlbase)) { echo 'select_glisse'; } ?>" <?php if(!preg_match('#/p/(index\.php\?id=' . $_SESSION['id_membre'] . '|lister\.php\?req=(.+)&id_liste=' . $_SESSION['id_membre'] . ')$#', $urlbase)) { ?> onmouseover="context_vive(0, true);" onmouseout="context_vive(0, false);" <?php } ?>>
 	<a href="index.php?id=<?php echo $_SESSION['id_membre']; ?>" title="Mon fil d'actu" class="a_context <?php if(preg_match('#/p/(index\.php\?id=' . $_SESSION['id_membre'] . '|lister\.php\?req=(.+)&id_liste=' . $_SESSION['id_membre'] . ')$#', $urlbase)) { echo 'a_select_glisse'; } ?>">Mon fil d'actu</a>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 </div>
 <div class="context_glisse <?php if(preg_match('#/p/(decouvrir\.php)$#', $urlbase)) { echo 'select_glisse'; } ?>" id="cg2" <?php if(!preg_match('#/p/(decouvrir\.php)$#', $urlbase)) { ?>onmouseover="context_vive(1, true);" onmouseout="context_vive(1, false);" <?php } ?>>
 	<a href="decouvrir.php" title="@Découvrir" class="a_context <?php if(preg_match('#/p/(decouvrir\.php)$#', $urlbase)) { echo 'a_select_glisse'; } ?>">@Découvrir</a>
@@ -40,7 +34,8 @@ $urlbase=$_SERVER['REQUEST_URI'];
 <select id="categorie_resp" onchange="resp_page('' + this[this.selectedIndex].value + '');">
 	<option value="">Catégorie</option>
 	<option value="index.php">Mon fil d'actu</option>
-	<option value="decouvrir.php">@Rechercher</option>
+	<option value="decouvrir.php">@Decouvrir</option>
+	<option value="salon.php">Le #Salon</option>
 	<option value="parametre.php">Paramètres</option>
 	<option value="index.php?dec">Deconnexion</option>
 </select>
